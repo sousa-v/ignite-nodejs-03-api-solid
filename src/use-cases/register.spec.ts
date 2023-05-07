@@ -15,7 +15,7 @@ describe('Register Use Case', () => {
       password: '12345',
     })
 
-    expect(user.id).toEqual(expect.any(String))
+    await expect(user.id).toEqual(expect.any(String))
   })
 
   it('should hash user password upon registration', async () => {
